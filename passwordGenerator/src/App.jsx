@@ -46,7 +46,8 @@ useEffect( () =>{
 
   return (
     <>
-   <div className=' w-full max-w-md mx-auto shadow-md rounded-lg p-6 my-8 text-orange-500 bg-gray-700 '>
+    <p className='text-white flex justify-center'>this  is password generator app which may help you on your social media password</p>
+   <div className=' w-full max-w-md mx-auto shadow-md rounded-lg p-6 my-20 text-orange-500 bg-gray-700 '>
    <h1 className=' text-white text-center'>PasswordGenerator</h1>
     <div className=' flex shadow rounded-lg overflow-x-hidden mb-4'>
 
