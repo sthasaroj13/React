@@ -1,13 +1,14 @@
 
-import Coffee from "./Coffee"
+
+import NavBar from "./component/NavBar"
 function App() {
   
 
   return (
     <> 
     {/* fragment */}
-     <Coffee/>
-     <h2>I perfer coffee rather than tea</h2>
+    <NavBar/>
+     <h2 className=" ">I perfer coffee rather than tea</h2>
     </>
   )
 }

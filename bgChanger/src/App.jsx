@@ -1,27 +1,18 @@
 import { useState } from "react"
 
 function App(){
+ const[marks,setMarks]= useState(33)
 
-  const [color,setColor]=useState('skyblue')
+//  let updateValue=()=>{
+//   setMarks("sorry you actual marks is ",20)
+// }
+ // so you can call usestate  by making function or you can inject function directly in jsx
   
   return (
     <>
-    <div className=' w-full h-screen duration-200' 
-style={{background:color}}>
-  <div className=" fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
-  <div className=" flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-xl">
-  <button onClick={()=>setColor("red")}className=" outline-none px-4 py-1 rounded-full
-  text-white" style={{background:"red"}}>Red</button>
-  <button onClick={()=>setColor("green")} className=" outline-none px-4 py-1 rounded-full
-  text-white" style={{background:"Green"}}>Green</button>
-  <button onClick={()=>setColor("blue")}className=" outline-none px-4 py-1 rounded-full
-  text-white" style={{background:"blue"}}>Blue</button>
-  <button onClick={()=>setColor("black")} className=" outline-none px-4 py-1 rounded-full
-  text-white" style={{background:"black"}}>back</button>
-  </div>
-    </div>
-    </div>
-      
+    <h1>My total marks is {marks}</h1>
+     <button onClick={()=>{setMarks(15)}} >Update</button>
+  
     </>
   )
 }

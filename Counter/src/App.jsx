@@ -3,10 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import NewCom from './NewCom'
+import Nav from './NavBar'
+
 
 function App() {
   
  let [counter,setCounter] = useState(0)
+ let[user,setuser]=useState('saroj')
 
    let addValue =()=>{
 let count = counter+1
@@ -29,10 +32,14 @@ setCounter(count)
 
   return (
     <>
+    <Nav user={user}/>
     <NewCom/>
       <h1>Counter:{counter}</h1>
-      <button onClick={addValue}>Add Counter:{counter} </button>  <br /> <br />
-      <button onClick={subValue}>Decrease Counter:{counter}</button>
+      <div className="btn">
+      <button onClick={addValue}>Add Counter </button>  
+      <button onClick={subValue}>Decrease Counter</button>
+      </div>
+     
     </>
   )
 }
