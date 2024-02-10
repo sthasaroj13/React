@@ -7,9 +7,16 @@ function AddTodo() {
   const Dispatch = useDispatch()
   const addTodoHandler =(e)=>{
     e.preventDefault()
-     Dispatch( addTodo(input))
-     setInput('')
-    //  console.log(s);
+    if (input=='') {
+      alert('enter the field')
+      
+    }
+    else{
+      Dispatch( addTodo(input))
+      setInput('')
+     //  console.log(s);
+    }
+     
   }
   return (
     <>
